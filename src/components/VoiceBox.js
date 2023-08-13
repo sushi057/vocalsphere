@@ -3,6 +3,8 @@ import mic from "../assets/images/microphone.png";
 import folder from "../assets/images/folder.png";
 import audiofile from "../assets/audio/harvard.wav";
 import AudioPlayer from "react-audio-player";
+// import { AudioRecorder } from "react-audio-voice-recorder";
+// import MicRecorder from "mic-recorder";
 
 function VoiceBox() {
   return (
@@ -27,19 +29,29 @@ function VoiceBox() {
               alt="folder icon"
               className="object-cover h-16 w-16"
             />
-            <button type="button" className="border-2 rounded-lg px-3 mt-2">
-              Upload{" "}
-            </button>
+            <input
+              type="file"
+              accept="audio/*"
+              id="audio-file"
+              className="hidden"
+            />
+            <label
+              htmlFor="audio-file"
+              className="border-2 rounded-lg px-3 mt-2 cursor-pointer"
+            >
+              Upload
+            </label>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center pt-4">
           <AudioPlayer src={audiofile} controls />
         </div>
       </div>
 
       <div className="mt-12 h-48">
         <h2 className="text-2xl font-bold">Nepali</h2>
-        <div className="flex justify-center">
+        <p>Your translated Nepali speech.</p>
+        <div className="flex justify-center mt-6">
           <AudioPlayer src={audiofile} controls />
         </div>
       </div>

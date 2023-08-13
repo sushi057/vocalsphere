@@ -5,7 +5,7 @@ import TextBox from "./components/TextBox";
 
 function App() {
   return (
-    <div className="App p-6">
+    <div className="App px-6 ">
       <Header />
       <div className="flex flex-row p-2 gap-8">
         <VoiceBox />
