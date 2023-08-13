@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="flex-row">
+      <div className=" flex flex-row">
         <VoiceBox />
-        <TextBox />
+        {/* <TextBox /> */}
       </div>
     </div>
   );

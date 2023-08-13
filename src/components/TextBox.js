@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function TextBox() {
   return (
-    <div>TextBox</div>
-  )
+    <div className="flex-col">
+      <div className="border-2 border-teal-500">English</div>
+    </div>
+  );
 }
 
-export default TextBox
+export default TextBox;
